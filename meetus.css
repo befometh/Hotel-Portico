@@ -1,0 +1,66 @@
+/* Generales */
+
+:root{
+    --banana: #FFFF35;
+    --dawn: #FFA242;
+    --green: #4AE825;
+    --aqua: #29FF95;
+    --sun: #E8BA25;
+  }
+
+/* Diseño 1: Mapa */
+#mapContainer {
+    height: 81vh;
+    display: flex;
+    align-items: center;
+}
+
+#mapContainer iframe {
+    display: block;
+    margin: auto;
+    border: var(--dawn) 3px dashed;
+    width: 600px;
+    height: 60vh;
+    padding: 1px;
+}
+
+/* Fin diseño 1 */
+
+/* Diseño 2: Formulario*/
+#formContainer {
+    height: 81vh;
+    display: flex;
+    align-items: center;    
+}
+
+input, label, textarea {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    margin: 5rem;
+    display: block;
+}
+
+#send {
+    padding: 6px;
+    margin: 10px;
+    background-color: var(--sun);
+    border-radius: 5px;
+}
+
+#send:hover {
+    padding: 10px;
+    box-shadow: var(--sun);
+    background-color: var(--banana);
+}
+
+span, h6 {
+    color: red;
+}
+
+h6 {
+    margin: 5px;
+}
+/* Fin diseño 2 */

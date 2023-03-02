@@ -1,0 +1,313 @@
+/* Generales */
+
+:root{
+  --banana: #FFFF35;
+  --dawn: #FFA242;
+  --green: #4AE825;
+  --aqua: #29FF95;
+  --sun: #E8BA25;
+}
+
+* {  
+  font-family: "Varela Round", sans-serif;
+}
+
+.title1 {
+    font-family: "Satisfy", cursive;
+}
+
+.cenH {
+  display: block;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+  /* Aplica bordes a las imágenes */
+.borderImg {
+  border: 10px solid transparent;
+  border-image: url(../img/borderTexture.jpg) 10% stretch;
+}
+
+body {
+  background-color: ivory;
+}
+
+/* Header */
+
+/* Logo, Nombre y Slogan */
+#mainLogo, #mainRHead {
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  width: 90px;
+  padding: 3px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+/* Idioma e Iniciar sesión */
+
+#mainRHead div {
+    display: inline;
+    padding-left: 4px;
+}
+
+#mainRHead form {
+    display: flex;
+    align-items: center;
+}
+
+.divOculto {
+    display: none;
+}
+
+.divMostrado {
+    display:block;
+}
+
+/* Imágenes principales */
+
+#mainCont>div {
+  position: relative;
+}
+
+#mainCont img {
+  width: 100%;
+  opacity: 0.5;
+  padding: 2%;
+}
+
+#mainCont img:hover {
+  transition: 0.5s;
+  opacity: 1;
+  padding: 0%;
+}
+
+#mainCont p {
+  text-align: center;
+  font-size: 28px;
+}
+
+.subImage {
+  display: none;
+  position: absolute;
+  width: 300%;
+  bottom: -3rem;
+}
+
+#main2 {  
+   left: -100%; 
+}
+
+#main3 {
+  left: -200%;
+}
+
+#mainCont>div:hover .subImage{
+  transition: display 0.5s;
+  display: block;
+}
+
+/* Parte 2. Desplegables secundarios */
+
+
+.mainDesc {
+  margin: 3rem 0 0 8.33%;  
+}
+
+.descSize {
+  height: 25rem;
+}
+
+.imageDesc img {
+  padding: 3rem;
+}
+
+.imageDesc h2 {text-align: center;}
+
+.imageDesc:hover img {
+  transition: 1s;
+  padding: 1rem
+}
+
+.textDesc {
+  padding: 1rem;
+  display: none;
+}
+/* Fin de la sección de imágenes */
+/* inicio del footer, botón de invitación y reservas */
+
+#footerDiv {
+  background-color: aqua;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+#footerDiv a {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  color: none;
+}
+
+#footerDiv h3{
+  color:var(--banana);
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#footerDiv p {
+  text-align: center;
+}
+
+#finalBar {
+  background-color: blue;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+#finalBar ul {
+  text-align: center;
+
+}
+
+#finalBar li {
+  display: inline;
+  padding: 8px;
+}
+
+#finalBar a {
+  color: var(--banana);
+  text-decoration: none;
+}
+
+/* Fin del footer */
+/* Barra de Navegación */
+
+.navRow {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: dashed var(--sun) 2px;
+}
+
+#navBar {
+  display: flex;
+  background-color: var(--aqua);
+  height: 2rem;
+}
+
+#navBar a{
+  text-decoration: none;
+  color: black;
+}
+
+#navBar a:visited {
+  color: black;
+}
+
+#navBar  ul {color: var(--banana);
+  list-style-type: none;
+  justify-content: center;
+}
+
+#navBar li {
+  padding: 5px;
+  background:linear-gradient(var(--aqua),var(--green));
+  transition: padding 0.5s;
+  overflow:visible;
+  font-size: 18px;
+  color: black;
+  white-space: nowrap;
+}
+
+#navBar>ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#navBar>ul>li {
+  display: inline;
+}
+
+
+#navBar li:hover {
+  background:linear-gradient(var(--banana),var(--sun));
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.menuBtn {
+  position: relative;
+  border-radius: 2%;
+}
+
+.floatMenu {
+  position: absolute;
+  left:0%;
+  top: -380%;
+  display: none;
+  z-index: 1;
+}
+
+.menuBtn:hover .floatMenu {
+  display: block;
+}
+
+.menuBtn:hover .floatMenu a, .floatMenu a:visited , .floatMenu li  {
+  color: var(--banana);
+}
+
+#buttonBar {
+  display: flex;
+}
+
+#buttonBar {
+  justify-content: center;
+  background-color: var(--aqua);
+  height: 2rem;
+  position: relative;
+}
+
+#buttonBar input {
+  position: absolute;
+  left: auto;
+  bottom: 0px;
+  background-color: var(--banana);
+  border-radius: 3%;
+  border: none;
+  font-size:21px;
+  transition: padding 0.5s;
+}
+
+#buttonBar input:hover {
+  padding: 1%;
+  background-color: var(--sun);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

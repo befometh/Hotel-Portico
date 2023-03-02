@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="auth" content="Cristyan Morales Acevedo" />
+    <title>Cónocenos - Pórtico Resort</title>
+
+    <!-- Hoja de estilo: Columnas y organización de la página -->
+    <link rel="stylesheet" href="./css/col.css" />
+
+    <!-- Hoja de estilo del home para el header, el footer y la barra de navegación -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Hoja de estilo propia -->
+    <link rel="stylesheet" href="./css/meetus.css" />
+
+    <!-- Fuente externa de fonts.googleapis.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cabecera de la página -->
+    <header>
+      <div class="row">
+        <!-- Mitad izquierda, logo y razón social -->
+        <div class="col col-6 cenH">
+          <div id="mainLogo">
+            <div id="logo" class="col">
+              <a href="#"
+                ><img src="./img/logo.png" alt="Logo de la empresa"
+              /></a>
+            </div>
+            <div class="col">
+              <h1 class="title1">Pórtico Resort</h1>
+              <p>"Lo negativo no pasa por la puerta"</p>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda mitad, idioma y login -->
+        <div class="col col-6">
+          <div id="mainRHead">
+            <div id="language">
+              <form action="languageForm">
+                <label for="languageList">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40"
+                    viewBox="0 96 960 960"
+                    width="40"
+                  >
+                    <path
+                      d="M480 976q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 83-31.5 156T763 859q-54 54-127 85.5T480 976Zm-43-61v-82q-35 0-59-26t-24-61v-44L149 497q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437 915Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607 257v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393 488h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"
+                    />
+                  </svg>
+                </label>
+                <select name="languageList" id="languageList">
+                  <option value="es">Español</option>
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutch</option>
+                  <option value="it">Italiano</option>
+                </select>
+              </form>
+            </div>
+            <div id="login">
+              <button id="loginButton" onclick="prueba();">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40"
+                  viewBox="0 96 960 960"
+                  width="40"
+                >
+                  <path
+                    d="M168 960q-29.7 0-50.85-21.15Q96 917.7 96 888V456q0-29.7 21.15-50.85Q138.3 384 168 384h216V264q0-29.7 21.15-50.85Q426.3 192 456 192h48q29.7 0 50.85 21.15Q576 234.3 576 264v120h216q29.7 0 50.85 21.15Q864 426.3 864 456v432q0 29.7-21.15 50.85Q821.7 960 792 960H168Zm0-72h624V456H576q0 30-21.15 51T504 528h-48q-29.7 0-50.85-21.15Q384 485.7 384 456H168v432Zm72-72h240v-23q0-17.63-9.5-32.667Q461 745.296 444 737q-20-8-40.5-12.5T360 720q-23 0-43.5 4.5T276 737.471Q259 745 249.5 760.13 240 775.261 240 793v23Zm336-48h144v-72H576v72Zm-216-72q25 0 42.5-17.5T420 636q0-25-17.5-42.5T360 576q-25 0-42.5 17.5T300 636q0 25 17.5 42.5T360 696Zm216-48h144v-72H576v72ZM456 456h48V264h-48v192Zm24 216Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fin de cabecera -->
+
+    <!-- Cuerpo de la página -->
+    <main>
+      <!-- Sección 1: Mapa de ubicación y formulario de contacto -->
+      <section>
+        <div class="row">
+            <!-- Mapa del sitio -->
+          <div class="col col-6" id="mapContainer">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56305.35559977731!2d-15.493625741796874!3d28.11344880000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4095dc450216d3%3A0x925c1e98bcd02ee7!2sP%C3%93RTICO%20Academia%20Multidisciplinar!5e0!3m2!1ses!2ses!4v1677674259977!5m2!1ses!2ses"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- Formulario -->
+          <div class="col col-6" id="formContainer">
+            <form action="#">
+              <h2 class="title1">Contáctanos <br></h1>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Inserte el nombre (opcional)">
+                <label for="email">Correo electrónico<span class="required">*</span></label>
+                <input type="email" id="email" name="email">
+                <label for="checkIssue">Seleccione el motivo<span class="required">*</span></label>
+                <select name="checkIssue" id="checkIssue">
+                    <option value="a">Problemas con la reserva</option>
+                    <option value="b">Elementos perdidos</option>
+                    <option value="c">Problema en la recogida</option>
+                    <option value="d">Problemas con el usuario de la página (Login)</option>
+                    <option value="e">Comentarios</option>
+                    <option value="f">Otros...</option>
+                </select>
+                <label for="subject">Asunto<span class="required">*</span></label>
+                <textarea name="subject" id="subject" cols="100" rows="10" placeholder="Escriba el asunto"></textarea>
+                <input type="button" value="Enviar" name="send" id="send">
+                
+            </form>            
+          </div>
+        </div>
+        <div class="row">
+            <div class="col col12" id="requiredContainer">
+                <h6>* Elemento de carácter obligatorio</h6>
+            </div>
+        </div>
+      </section>
+      <!-- Fin sección 1 -->
+
+      <!-- Pie de página -->
+      <footer>
+        <section>
+            <div class="col col-12" id="finalBar">
+              <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Derechos de Autor</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="./meetus.html">Contacto</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <!-- Fin Pie -->
+
+      <!-- Barra de navegación -->
+      <nav>
+        <!-- Separación de fila para la barra de navegación -->
+        <div class="row navRow">
+          <!-- Primera mitad: Barra de navegación -->
+          <div class="col col-6" id="navBar">
+            <ul>
+              <!-- Botón Inicio -->
+
+              <li class="menuBtn"><a class="linkMenu" href="./index.html">Inicio</a></li>
+
+              <!-- Botón Quienes Somos -->
+
+              <li class="menuBtn">
+                <a class="linkMenu" href="#">Quienes Somos</a>
+              </li>
+
+              <!-- Botón Entrenimiento (menú desplegable) -->
+
+              <li class="menuBtn">
+                Entretenimiento
+                <ul class="floatMenu" id="float1">
+                  <li><a class="linkMenu" href="#">Piscina Norte</a></li>
+                  <li><a class="linkMenu" href="#">Piscina Sureste</a></li>
+                  <li><a class="linkMenu" href="#">Sala de Encuentros</a></li>
+                  <li>
+                    <a class="linkMenu" href="#">Cancha de Tenis: Adonis</a>
+                  </li>
+                  <li>
+                    <a class="linkMenu" href="#">Cancha de Tenis: Helena</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Botón Menú (menú desplegable) -->
+
+              <li class="menuBtn">
+                Menú
+                <ul class="floatMenu" id="float2">
+                  <li>
+                    <a class="linkMenu" href="#">Especialidad del Chef</a>
+                  </li>
+                  <li><a class="linkMenu" href="#">Snack Bar</a></li>
+                  <li><a class="linkMenu" href="#">Cata de Vinos</a></li>
+                  <li>
+                    <a class="linkMenu" href="#">Comida Vegetariana/Vegana</a>
+                  </li>
+                  <li><a class="linkMenu" href="#">Gourmet</a></li>
+                </ul>
+              </li>
+
+              <!-- Botón Trabaja con nosotros -->
+
+              <li class="menuBtn">
+                <a class="linkMenu" href="./meetus.html"
+                  >Trabaja con Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Fin de primera mitad -->
+
+          <!-- Segunda Mitad: Botón Reserva Ahora -->
+          <div class="col col-6" id="buttonBar">
+            <input type="button" value="¡RESERVA AHORA!" class="title1" />
+          </div>
+          <!-- Fin Botón Reserva -->
+        </div>
+        <!-- Fin de fila -->
+      </nav>
+      <!-- Fin nav -->
+    </main>
+    <!-- Fin del cuerpo -->
+  </body>
+</html>

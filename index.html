@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="auth" content="Cristyan Morales Acevedo" />
+    <title>Inicio - Pórtico Resort</title>
+
+    <!-- Hoja de estilo: Columnas y organización de la página -->
+    <link rel="stylesheet" href="./css/col.css" />
+
+    <!-- Hoja de estilo: Configuración principal de la página y diseño general -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Implementación Javascript para las ventanas con descripción automáticas -->
+    <script src="./js/script.js"></script>
+
+    <!-- Fuente externa de fonts.googleapis.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Cabecera de la página -->
+    <header>
+      <div class="row">
+        <!-- Mitad izquierda, logo y razón social -->
+        <div class="col col-6 cenH">
+          <div id="mainLogo">
+            <div id="logo" class="col">
+              <a href="#"
+                ><img src="./img/logo.png" alt="Logo de la empresa"
+              /></a>
+            </div>
+            <div class="col">
+              <h1 class="title1">Pórtico Resort</h1>
+              <p>"Lo negativo no pasa por la puerta"</p>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda mitad, idioma y login -->
+        <div class="col col-6">
+          <div id="mainRHead">
+            <div id="language">
+              <form action="languageForm">
+                <label for="languageList">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40"
+                    viewBox="0 96 960 960"
+                    width="40"
+                  >
+                    <path
+                      d="M480 976q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 83-31.5 156T763 859q-54 54-127 85.5T480 976Zm-43-61v-82q-35 0-59-26t-24-61v-44L149 497q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437 915Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607 257v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393 488h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"
+                    />
+                  </svg>
+                </label>
+                <select name="languageList" id="languageList">
+                  <option value="es">Español</option>
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutch</option>
+                  <option value="it">Italiano</option>
+                </select>
+              </form>
+            </div>
+            <div id="login">
+              <button id="loginButton" onclick="prueba();">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40"
+                  viewBox="0 96 960 960"
+                  width="40"
+                >
+                  <path
+                    d="M168 960q-29.7 0-50.85-21.15Q96 917.7 96 888V456q0-29.7 21.15-50.85Q138.3 384 168 384h216V264q0-29.7 21.15-50.85Q426.3 192 456 192h48q29.7 0 50.85 21.15Q576 234.3 576 264v120h216q29.7 0 50.85 21.15Q864 426.3 864 456v432q0 29.7-21.15 50.85Q821.7 960 792 960H168Zm0-72h624V456H576q0 30-21.15 51T504 528h-48q-29.7 0-50.85-21.15Q384 485.7 384 456H168v432Zm72-72h240v-23q0-17.63-9.5-32.667Q461 745.296 444 737q-20-8-40.5-12.5T360 720q-23 0-43.5 4.5T276 737.471Q259 745 249.5 760.13 240 775.261 240 793v23Zm336-48h144v-72H576v72Zm-216-72q25 0 42.5-17.5T420 636q0-25-17.5-42.5T360 576q-25 0-42.5 17.5T300 636q0 25 17.5 42.5T360 696Zm216-48h144v-72H576v72ZM456 456h48V264h-48v192Zm24 216Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fin de cabecera -->
+    <!-- Cuerpo de la página -->
+    <main>
+      <!-- Imágenes principales -->
+      <head>
+        <div class="row">
+          <div class="col" id="mainCont">
+            <div class="col col-4">
+              <img src="./img/main1.jpg" alt="Nuestras vistas a la piscina" />
+              <div class="col col-12 subImage" id="main1">
+                <p>"Preciosas vistas en nuestra piscina a la orilla del mar"</p>
+              </div>
+            </div>
+            <div class="col col-4">
+              <img
+                src="./img/main2.jpg"
+                alt="Vista del atardecer en la piscina"
+              />
+              <div class="col col-12 subImage" id="main2">
+                <p>
+                  "No te pierdas un atardecer único con tu pareja, o disfrutando
+                  con tu familia"
+                </p>
+              </div>
+            </div>
+            <div class="col col-4">
+              <img src="./img/main3.jpg" alt="Restaurante al aire libre" />
+              <div class="col col-12 subImage" id="main3">
+                <p>
+                  "Cocina de categoría al servicio de tu paladar, viendo
+                  diréctamente al mar, abierta las 24 hs"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </head>
+      <!-- cuerpo de la página -->
+      <section>
+        <!-- Fila 1 -->
+        <div class="row">
+          <div class="col col-10 mainDesc">
+            <!-- Elemento 1 -->
+            <article>
+              <div class="col col-4">
+                <div
+                  class="col imageDesc"
+                  onmouseover="abrir(desc1)"
+                  onmouseleave="cerrar(desc1)"
+                >
+                  <img class="borderImg descSize" src="./img/1.jpg" alt="" />
+                  <div class="col textDesc" id="desc1">
+                    <h2 class="title1">
+                      Disfruta cuando comes, en nuestros dos restaurantes únicos
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quam, cumque, impedit voluptate rem nulla numquam nemo
+                      quidem recusandae itaque repellat quibusdam? Est ex
+                      inventore optio modi tenetur fugiat? Neque, obcaecati.
+                      Alias cupiditate consectetur ea quod id natus rem debitis
+                      tempora, dolorem eveniet, quo necessitatibus recusandae
+                      minus fugiat sed hic porro dolore corporis? Sapiente
+                      facilis aut, ratione pariatur fugit rerum aliquid?
+                    </p>
+                    <div class="col">
+                      <img src="./img/1a.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Elemento 2 -->
+            <article>
+              <div class="col col-4">
+                <div
+                  class="col imageDesc"
+                  onmouseover="abrir(desc2)"
+                  onmouseleave="cerrar(desc2)"
+                >
+                  <img class="borderImg descSize" src="./img/2.jpg" alt="" />
+                  <div class="col textDesc" id="desc2">
+                    <h2 class="title1">
+                      Tardes de piscina, ¡Y por partida doble!
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quos cum id rerum impedit provident aut earum, vel ex
+                      explicabo ad odit quod ea natus pariatur, quam ab velit
+                      nostrum totam. Rem deserunt ab odit soluta at delectus
+                      ullam recusandae nulla ratione. Aperiam blanditiis saepe
+                      iure, repellat nam esse sunt, accusamus magnam molestiae
+                      dolore quas? Eum dolorem facere amet ratione nobis?
+                    </p>
+                    <img src="./img/main2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Elemento 3 -->
+            <article>
+              <div
+                class="col col-4 imageDesc"
+                onmouseover="abrir(desc3)"
+                onmouseleave="cerrar(desc3)"
+              >
+                <img class="borderImg descSize" src="./img/3.jpg" alt="" />
+                <div class="col textDesc" id="desc3">
+                  <h2 class="title1">
+                    Relajarte con nuestros terapeutas, ¡Lo mejor!
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem deserunt doloremque quia iure. Quo impedit
+                    explicabo enim laudantium vitae qui sint, necessitatibus
+                    laboriosam, doloremque corporis debitis ab accusamus modi
+                    consequuntur? Minus at distinctio repellendus voluptate
+                    porro provident libero error autem, esse reiciendis ab quia?
+                    Dolore dignissimos provident veritatis quo ratione
+                    praesentium incidunt ex ipsa? Neque quisquam porro
+                    distinctio dignissimos ipsam!
+                  </p>
+                  <div class="col col-4">
+                    <img src="./img/3a.jpg" alt="" />
+                  </div>
+                  <div class="col col-4">
+                    <img src="./img/3b.jpg" alt="" />
+                  </div>
+                  <div class="col col-4">
+                    <img src="./img/3c.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Fin de Fila 1 -->
+        <!-- Fila 2 -->
+        <div class="row">
+          <div class="col col-10 mainDesc" id="mainDesc2">
+            <!-- Elemento 4 -->
+            <article>
+              <div class="col col-4">
+                <div
+                  class="col imageDesc"
+                  onmouseover="abrir(desc4)"
+                  onmouseleave="cerrar(desc4)"
+                >
+                  <img class="borderImg descSize" src="./img/4.jpg" alt="" />
+                  <div class="col textDesc" id="desc4">
+                    <h2 class="title1">
+                      Sabemos que eres importante, así que iremos por tí al
+                      aeropuerto
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quam, cumque, impedit voluptate rem nulla numquam nemo
+                      quidem recusandae itaque repellat quibusdam? Est ex
+                      inventore optio modi tenetur fugiat? Neque, obcaecati.
+                      Alias cupiditate consectetur ea quod id natus rem debitis
+                      tempora, dolorem eveniet, quo necessitatibus recusandae
+                      minus fugiat sed hic porro dolore corporis? Sapiente
+                      facilis aut, ratione pariatur fugit rerum aliquid?
+                    </p>
+                    <div class="col">
+                      <img src="./img/4a.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Elemento 5 -->
+            <article>
+              <div class="col col-4">
+                <div
+                  class="col imageDesc"
+                  onmouseover="abrir(desc5)"
+                  onmouseleave="cerrar(desc5)"
+                >
+                  <img
+                    class="borderImg descSize"
+                    src="./img/5.jpg"
+                    alt="Deporte al aire libre"
+                  />
+                  <div class="col textDesc" id="desc5">
+                    <h2 class="title1">
+                      ¿Te gusta el deporte?, ¡Pues tenemos canchas de tenis
+                      profesionales!
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quos cum id rerum impedit provident aut earum, vel ex
+                      explicabo ad odit quod ea natus pariatur, quam ab velit
+                      nostrum totam. Rem deserunt ab odit soluta at delectus
+                      ullam recusandae nulla ratione. Aperiam blanditiis saepe
+                      iure, repellat nam esse sunt, accusamus magnam molestiae
+                      dolore quas? Eum dolorem facere amet ratione nobis?
+                    </p>
+                    <div class="col col-6">
+                      <img src="./img/5a.jpg" alt="Chica en cancha de tenis" />
+                    </div>
+                    <div class="col col-6">
+                      <img src="./img/5b.jpg" alt="Raqueta y pelota de tenis" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Elemento 6 -->
+            <article>
+              <div
+                class="col col-4 imageDesc"
+                onmouseover="abrir(desc6)"
+                onmouseleave="cerrar(desc6)"
+              >
+                <img class="borderImg descSize" src="./img/6.jpg" alt="" />
+                <div class="col textDesc" id="desc6">
+                  <h2 class="title1">
+                    Relajarte con nuestros terapeutas, ¡Lo mejor!
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem deserunt doloremque quia iure. Quo impedit
+                    explicabo enim laudantium vitae qui sint, necessitatibus
+                    laboriosam, doloremque corporis debitis ab accusamus modi
+                    consequuntur? Minus at distinctio repellendus voluptate
+                    porro provident libero error autem, esse reiciendis ab quia?
+                    Dolore dignissimos provident veritatis quo ratione
+                    praesentium incidunt ex ipsa? Neque quisquam porro
+                    distinctio dignissimos ipsam!
+                  </p>
+                  <div class="col col-6">
+                    <img src="./img/6a.jpg" alt="" />
+                  </div>
+                  <div class="col col-6">
+                    <img src="./img/6b.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Fin de la fila 2 -->
+      </section>
+      <!-- Pie de página -->
+      <footer>
+        <!-- Fila 1: Botón de Invitación -->
+        <section>
+          <div class="row">
+            <div class="col col-12" id="footerDiv">
+              <a href="#">
+                <h3 id="invitation">¡RESERVA YA!</h3>
+                <p>¡Haz clic aquí!</p>
+              </a>
+            </div>
+
+            <!-- Fila 2: Pie de Página -->
+            <div class="col col-12" id="finalBar">
+              <ul>
+                <li><a href="#mainLogo">Inicio</a></li>
+                <li><a href="#">Derechos de Autor</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="./meetus.html">Contacto</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <!-- Fin pie de página -->
+    </main>
+    <!-- Fin del cuerpo de la página -->
+    <!-- Inicio del Aside -->
+    <nav>
+      <!-- Separación de fila para la barra de navegación -->
+      <div class="row navRow">
+        <!-- Primera mitad: Barra de navegación -->
+        <div class="col col-6" id="navBar">
+          <ul>
+            <!-- Botón Inicio -->
+
+            <li class="menuBtn"><a class="linkMenu" href="#">Inicio</a></li>
+
+            <!-- Botón Quienes Somos -->
+
+            <li class="menuBtn"><a class="linkMenu" href="#">Quienes Somos</a></li>
+
+            <!-- Botón Entrenimiento (menú desplegable) -->
+
+            <li class="menuBtn">
+              Entretenimiento
+              <ul class="floatMenu" id="float1">
+                <li><a class="linkMenu" href="#">Piscina Norte</a></li>
+                <li><a class="linkMenu" href="#">Piscina Sureste</a></li>
+                <li><a class="linkMenu" href="#">Sala de Encuentros</a></li>
+                <li><a class="linkMenu" href="#">Cancha de Tenis: Adonis</a></li>
+                <li><a class="linkMenu" href="#">Cancha de Tenis: Helena</a></li>
+              </ul>
+            </li>
+
+
+            <!-- Botón Menú (menú desplegable) -->
+
+            <li class="menuBtn">
+              Menú
+              <ul class="floatMenu" id="float2">
+                <li><a class="linkMenu" href="#">Especialidad del Chef</a></li>
+                <li><a class="linkMenu" href="#">Snack Bar</a></li>
+                <li><a class="linkMenu" href="#">Cata de Vinos</a></li>
+                <li><a class="linkMenu" href="#">Comida Vegetariana/Vegana</a></li>
+                <li><a class="linkMenu" href="#">Gourmet</a></li>
+              </ul>
+            </li>                       
+
+            <!-- Botón Trabaja con nosotros -->
+
+            <li class="menuBtn"><a class="linkMenu" href="./meetus.html">Trabaja con Nosotros</a> </li>
+          </ul>
+        </div>
+        <!-- Fin de primera mitad -->
+        
+        <!-- Segunda Mitad: Botón Reserva Ahora -->
+        <div class="col col-6" id="buttonBar">
+          <input type="button" value="¡RESERVA AHORA!" class="title1">
+        </div>
+        <!-- Fin Botón Reserva -->
+
+      </div>
+      <!-- Fin de fila -->
+    </nav>
+  </body>
+</html>
